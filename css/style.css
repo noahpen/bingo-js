@@ -1,0 +1,58 @@
+body { 
+    text-align: center;
+    font-family: Verdana, sans-serif; 
+    background: #4b555b;
+}
+
+p { color: #ffffff; }
+
+a { color: #99d8ff; }
+
+a:hover { color: #ffb219; }
+
+a, a:hover { text-decoration: none; }
+
+th, td {
+    width: 20%;
+    border: 2.5px solid black;
+    text-align: center;
+}
+
+#bingo-card {
+    margin: 0 auto;
+    text-align: center;
+    width: 360px;
+    height: 360px;
+    border-collapse: collapse;
+    background: #d3d3d3;
+}
+
+.header {
+    background: #f44242;
+    font-size: 20px;
+}
+
+#sqfree { background: #f9ff63; }
+
+#goals { 
+    color: #ffffff; 
+}
+
+.button {
+    background-color: #ffffff; 
+    border: 2px solid #4286f4;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4286f4; 
+    color: #ffffff;
+}

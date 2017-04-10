@@ -1,0 +1,69 @@
+<!--Noah Peneycad 
+    CISC282 Assignment #4
+    April 10, 2017-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bingo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'>
+        <script src="scripts/bingo.js"></script>
+    </head>
+    <body onload="init()">
+        <div id="bingo-content">
+            <table id="bingo-card">
+                <tr>
+                    <th class="header">B</th>
+                    <th class="header">I</th>
+                    <th class="header">N</th>
+                    <th class="header">G</th>
+                    <th class="header">O</th>
+                </tr>
+                <tr>
+                    <td id="sq0">&nbsp;</td>
+                    <td id="sq1">&nbsp;</td>
+                    <td id="sq2">&nbsp;</td>
+                    <td id="sq3">&nbsp;</td>
+                    <td id="sq4">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="sq5">&nbsp;</td>
+                    <td id="sq6">&nbsp;</td>
+                    <td id="sq7">&nbsp;</td>
+                    <td id="sq8">&nbsp;</td>
+                    <td id="sq9">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="sq10">&nbsp;</td>
+                    <td id="sq11">&nbsp;</td>
+                    <td id="sqfree">FREE</td>
+                    <td id="sq13">&nbsp;</td>
+                    <td id="sq14">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="sq15">&nbsp;</td>
+                    <td id="sq16">&nbsp;</td>
+                    <td id="sq17">&nbsp;</td>
+                    <td id="sq18">&nbsp;</td>
+                    <td id="sq19">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td id="sq20">&nbsp;</td>
+                    <td id="sq21">&nbsp;</td>
+                    <td id="sq22">&nbsp;</td>
+                    <td id="sq23">&nbsp;</td>
+                    <td id="sq24">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div id="goals">
+            <h4>Goals</h4>
+            <input type="button" class="button" name="horiz" value="Horizontal Line">
+            <input type="button" class="button" name="vert" value="Vertical Line">
+            <input type="button" class="button" name="diag" value="Diagonal Line">
+            <input type="button" class="button" name="full" value="Full Card">
+        </div>
+        <p><a href="#" onclick="generateAnotherCard()">Click here</a> to generate a new card</p>
+    </body>
+</html>
