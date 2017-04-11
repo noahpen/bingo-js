@@ -218,7 +218,7 @@ function checkCornersBingo() {
             sq2.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq2.value)) &&
             sq3.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq3.value)) &&
             sq4.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq4.value))) {
-                youWin(sq1, sq2, sq3, sq4);
+                youWinCorners(sq1, sq2, sq3, sq4);
                 return;
     }
     else {
@@ -251,7 +251,7 @@ function checkFullBingo() {
         }
         else if (sq1.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq1.value)) &&
             sq2.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq2.value)) &&
-            sq3.style.backgroundColor == "lightblue" && 
+            sq3.value == "FREE" &&
             sq4.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq4.value)) &&
             sq5.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq5.value))) {
                 flag = true;
@@ -264,20 +264,24 @@ function checkFullBingo() {
     if (flag == true) {
         youWinFullBingo();
     }
+    else {
+        document.getElementById("currentCall").innerHTML = "Not a valid bingo! Keep trying!";
+        return;
+    }
 }
 
 function checkLines(sq1, sq2, sq3, sq4, sq5) {
     if (sq1.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq1.value)) &&
-            sq2.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq2.value)) &&
-            sq3.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq3.value)) &&
-            sq4.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq4.value)) &&
-            sq5.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq5.value))) {
-                youWin(sq1, sq2, sq3, sq4, sq5);
-                return;
+        sq2.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq2.value)) &&
+        sq3.value == "FREE" &&
+        sq4.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq4.value)) &&
+        sq5.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq5.value))) {
+            youWin(sq1, sq2, sq3, sq4, sq5);
+            return;
     }
     else if (sq1.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq1.value)) &&
             sq2.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq2.value)) &&
-            sq3.style.backgroundColor == "lightblue" && 
+            sq3.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq3.value)) &&
             sq4.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq4.value)) &&
             sq5.style.backgroundColor == "lightblue" && calledNumbers.includes(parseInt(sq5.value))) {
                 youWin(sq1, sq2, sq3, sq4, sq5);
