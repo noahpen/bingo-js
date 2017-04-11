@@ -37,7 +37,7 @@
                 <tr>
                     <td><input id="sq10" class="square" type="button" value="&nbsp;" onclick="markSquare('sq10')"></td>
                     <td><input id="sq11" class="square" type="button" value="&nbsp;" onclick="markSquare('sq11')"></td>
-                    <td><input id="sqfree" class="square" type="button" value="FREE" onclick="markSquare('sqfree')"></td>
+                    <td><input id="sq12" class="square" type="button" value="FREE" onclick="markSquare('sq12')"></td>
                     <td><input id="sq13" class="square" type="button" value="&nbsp;" onclick="markSquare('sq13')"></td>
                     <td><input id="sq14" class="square" type="button" value="&nbsp;" onclick="markSquare('sq14')"></td>
                 </tr>
@@ -60,14 +60,14 @@
         <div id="buttons">
             <div id="goals">
                 <p>Goals: 
-                    <input type="button" class="button" name="line" value="Line">
-                    <input type="button" class="button" name="full" value="Full Card">
+                    <input type="button" class="button" name="line" id="bLine" value="Line" onclick="lineBingo()">
+                    <input type="button" class="button" name="full" id="bFull" value="Full Card" onclick="fullBingo()">
                 </p>
             </div>
             <div id="actions">
                 <p>Actions: 
-                    <input type="button" class="button" name="call" value="Call" onclick="callNumber()">
-                    <input type="button" class="button" name="bingo" value="Bingo">
+                    <input type="button" class="button" name="call" id="bCall" value="Call" onclick="callNumber()">
+                    <input type="button" class="button" name="bingo" id="bBingo" value="Bingo" onclick="checkForBingo()">
                 </p>
             </div>
             <p>Current Call: <p id="currentCall">&nbsp;</p></p>

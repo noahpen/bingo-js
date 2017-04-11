@@ -1,2 +1,0 @@
-"# js-bingo" 
-"# bingo-js" 
