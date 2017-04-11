@@ -59,15 +59,18 @@
         </div>
         <div id="buttons">
             <div id="goals">
-                <h5>Goals</h5>
-                <input type="button" class="button" name="line" value="Line">
-                <input type="button" class="button" name="full" value="Full Card">
+                <p>Goals: 
+                    <input type="button" class="button" name="line" value="Line">
+                    <input type="button" class="button" name="full" value="Full Card">
+                </p>
             </div>
             <div id="actions">
-                <h5>Actions</h5>
-                <input type="button" class="button" name="call" value="Call">
-                <input type="button" class="button" name="bingo" value="Bingo">
+                <p>Actions: 
+                    <input type="button" class="button" name="call" value="Call" onclick="callNumber()">
+                    <input type="button" class="button" name="bingo" value="Bingo">
+                </p>
             </div>
+            <p>Current Call: <p id="currentCall">&nbsp;</p></p>
             <p>Called Numbers: </p>
             <p id="calledNums">None</p>
         </div>
