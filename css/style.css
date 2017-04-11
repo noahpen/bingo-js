@@ -43,9 +43,7 @@ th, td {
 
 #goals, #actions { 
     color: #ffffff; 
-    /*float: right;*/
     text-align: center;
-    /*border: 2px solid;*/
 }
 
 .button {
@@ -68,5 +66,7 @@ th, td {
     background-color: #4286f4; 
     color: #ffffff;
 }
+
+.square { cursor: pointer; }
 
 button:focus { outline:0; }
