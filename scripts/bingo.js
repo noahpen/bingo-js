@@ -36,7 +36,7 @@ function generateSquare(squareNum) {
     // sets the used number in the array as true so no duplicates
     usedNumbers[newNumber] = true;
     // sets the current square to the new number
-    document.getElementById(currentSquare).innerHTML = newNumber;
+    document.getElementById(currentSquare).value = newNumber;
 }
 
 function generateNewNum() {
@@ -56,4 +56,15 @@ function generateAnotherCard() {
     resetUsedNumbers();
     generateNewCard();
 }
+
+function markSquare(square) {
+    var currentSquare = document.getElementById(square);
+    if (currentSquare.style.backgroundColor == "lightblue") 
+        currentSquare.style.backgroundColor = "#ffffff";
+    else
+        currentSquare.style.backgroundColor = "lightblue";
+    return;
+}
+
+
 
